@@ -49,6 +49,10 @@ a{
 
 .page-header{
     border-bottom: 1px solid #e7e9fc;
+    padding-left: 15px; 
+    padding-right:  15px;
+    padding-top: 24px; 
+    padding-bottom: 24px;   
 }
 .header-logo{
     margin-right: 76px;
@@ -61,7 +65,7 @@ a{
     justify-content: space-between;
     align-items: center;
     gap: 76px;
-       
+    
     }
 
 .nav-list{
