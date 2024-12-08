@@ -46,6 +46,7 @@ a{
 }
 /* #region heder */
 
+
 .page-header{
     border-bottom: 1px solid #e7e9fc;
 }
@@ -65,7 +66,8 @@ a{
 .nav-list{
     display: flex;
     gap: 40px;
-    
+    padding-top: 24px; 
+padding-bottom: 24px;    
     }
 
 .contacts-list{
@@ -353,9 +355,7 @@ color: #434455;
 
 .footer-logo .logo-part{
     color: #f4f4fd;
-    display: inline-block; 
-    margin-bottom: 16px;
-       }
+    }
 
 .footer-text{
     font-size: 16px;
@@ -364,12 +364,13 @@ color: #434455;
     color: #f4f4fd;
     margin-top: 18px;
     width: 264px;
+    display: inline-block;
 }
 
 .footer-logo{
     display: flex;
     font-display: column;
-
+    margin-bottom: 16px;
     width: 115px;
 }
 /* #endregion */
