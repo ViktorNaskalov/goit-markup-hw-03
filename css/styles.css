@@ -61,7 +61,7 @@ a{
     justify-content: space-between;
     align-items: center;
     gap: 76px;
-    
+       
     }
 
 .nav-list{
@@ -81,6 +81,8 @@ padding-bottom: 24px;
 .page-header .container{
     display: flex;
     justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logo {
@@ -350,8 +352,12 @@ color: #434455;
     background-color: #2e2f42;
     padding-top: 100px; 
     padding-bottom: 100px;
+   
     }
 
+    .container .footer-logo {
+        display: inline-block;
+    }
 .footer-logo .logo-part{
     color: #f4f4fd;
     }
@@ -365,14 +371,11 @@ color: #434455;
     width: 264px;
     }
 
-    .logo{
-        display: inline-block;
-    }
-        
+          
     
 .footer-logo{
     display: flex;
-    font-display: column;
+    flex-direction: column;
     margin-bottom: 16px;
     width: 115px;
 }
