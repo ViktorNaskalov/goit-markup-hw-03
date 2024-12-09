@@ -59,7 +59,6 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 76px;
     }
 
 .header-logo .logo-part {
@@ -123,8 +122,6 @@ display: block;
 
 /* #region section-one */
 
-
-
 .main-section-one{
     background-color: #2e2f42;
     display: flex;               
@@ -141,7 +138,6 @@ font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
 color: #ffffff;
-padding-top: 188px;
 max-width: 496px;
 margin-bottom: 48px;
 }
@@ -175,9 +171,17 @@ margin: 0 auto;
 /* #region section-two */
 
 .main-section-two{
-       padding-top: 120px;
-    padding-bottom: 120px;
+padding-top: 120px;
+padding-bottom: 120px;
 }
+
+.section-two-list{
+    display: flex;
+    gap: 24px;
+}
+
+.section-two-item{
+    width: 264px;}
 
 .section-two-item-h{
 font-weight: 500;
@@ -185,6 +189,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .section-two-text{
@@ -193,20 +198,6 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 }
-
-.section-two-list{
-    display: flex;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    gap: 24px;
-}
-
-.section-two-item-h{
-    margin-bottom: 8px;
-}
-
-.section-two-item{
-width: 264px;}
 
 /* #endregion */
 
@@ -218,33 +209,31 @@ width: 264px;}
     padding-top: 120px;
 }
 
-.team-item{
-    background-color: #ffffff;
-    margin-bottom: 120px;
-    border-radius: 0px 0px 4px 4px;
-    }
-
-
 .team-h{
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
-text-transform: capitalize;
-
-min-width: 162px;
-padding-top: 120px;
-margin-bottom: 72px;
-}
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+    }
 
 .team-list{
     display: flex;
     gap: 24px;
-    padding-bottom: 60px;
-    padding-top: 60px;
-}
+    }
+
+.team-item{
+    background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    }
+
+.container-team-item{
+    padding: 32px 0;
+    }
+
 .team-list-h{
 font-weight: 500;
 font-size: 20px;
@@ -252,6 +241,7 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .team-list-text{
@@ -262,29 +252,14 @@ text-align: center;
 color: #434455;
 }
 
-.team-img{
-    margin-bottom: 32px;
-
-}
-
-.container-team-item{
-  
-  padding: 32px 0;
-}
-
-.team-list-h{
-    margin-bottom: 8px;
-}
-
 /* #endregion */
 
 /* #region portfolio */
 
 .portfolio{
-   
     display: flex;
     padding-top: 120px;
-     padding-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-h{
@@ -295,7 +270,6 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
 text-transform: capitalize;
-
 margin-bottom: 72px;
 }
 
@@ -305,18 +279,16 @@ margin-bottom: 72px;
     row-gap: 48px;
     column-gap: 24px;
     }
-    .container-text-potfolio{
-        border-bottom: 1px solid #e7e9fc;
-        border-left: 1px solid #e7e9fc;
-        border-right: 1px solid #e7e9fc;
-        padding: 32px 16px;
-        width: 360px;
-        height: 120px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        gap: 8px;
+
+.container-text-potfolio{
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    border-bottom: 1px solid #e7e9fc;
     }
 
 .portfolio-item-h{
@@ -341,17 +313,23 @@ color: #434455;
 
 /* #region footer */
 
-
 .page-footer{
     background-color: #2e2f42;
     padding-top: 100px; 
     padding-bottom: 100px;
-   
     }
 
-    .container .footer-logo {
-        display: inline-block;
+.container .footer-logo {
+    display: inline-block;
     }
+
+.footer-logo{
+    flex-direction: column;
+    margin-bottom: 16px;
+    width: 115px;
+    display: flex;
+    }
+
 .footer-logo .logo-part{
     color: #f4f4fd;
     }
@@ -361,18 +339,12 @@ color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin-top: 18px;
     width: 264px;
     }
 
-          
-    
-.footer-logo{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
-    width: 115px;
-}
 /* #endregion */
+
+
+
 
 
